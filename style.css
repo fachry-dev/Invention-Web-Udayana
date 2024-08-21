@@ -21,10 +21,11 @@
     height: 100%;
     display: flex;
     align-items: center;
+    margin-bottom: -30px;
 }
 .area-logo img{
     width: 150px;
-    margin-left: 20%;
+    margin-left: 10%;
 }
 .nav-item{
     width: 40%;
@@ -32,6 +33,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -30px;
 }
 .nav-item ul{
     list-style: none;
@@ -41,9 +43,56 @@
     padding: 15px;
 }
 .nav-item ul li a{
-    color: black;
+    font-size: 1em;
+    color: #1E201E;
+    padding: 6px 10px;
+    transition: .5s;
+    font-weight: 500;
     text-decoration: none;
 }
+.nav ul li a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #3FA158;
+    z-index: -1;
+    border-radius: 15px;
+    border-bottom: 2px solid #3FA158;
+    transform: scale(1) translateY(50px);
+}
+.nav a:hover ul li a{
+    transform: scale(1) translateY(0);
+    opacity: 1;
+}
+
+.nav-item ul li :hover{
+    color: #597445;
+}
+
+.navbar a::after{
+position: absolute;
+content: "";
+height: 2px;
+width: 0;
+bottom: -10px;
+left: 50%;
+background-color: #3FA158;
+transition: width 0.8 ease;
+transition: 0.5s;
+transform: translate(-50%);
+}
+.navbar a:hover{
+color: #3FA158;
+font-size: 1.3rem;
+transition: all 0.8 ease;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
 .button-area{
     width: 10%;
     height: 100%;
@@ -57,4 +106,53 @@
 .text-title{
     width: 50%;
     height: 100%;
+}
+.get-started{
+    padding: 15px 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #fff;
+    background-color: #2CC053;
+    margin-bottom: -30px;
+}
+
+.get-started:hover {
+    background-color: #309248;
+}
+  
+.get-started:active {
+    transform: translateY(2px);
+}
+  
+.get-started:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+
+.get-started{
+    color: #fff;
+    cursor: pointer;
+}
+  
+.get-started:hover {
+    animation: animation 0.8s ease-in-out;
+}
+
+@keyframes animation {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+    
+}
+.image-area img{
+    height: 30%;
+    width: 35%;
+    margin-left: 60%;
 }
