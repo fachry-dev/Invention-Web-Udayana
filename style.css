@@ -1,80 +1,176 @@
-*{
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
 }
-.hero{
-    width: 100vw;
-    height: 100vh;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+body {
+  width: 100%;
+  height: 100%;
 }
-.navbar{
-    width: 100%;
-    height: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.hero {
+  width: 100vw;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(Background\ Home\ Page.png);
+  background-size: cover;
 }
-.nav-item{
-    width: 40%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.navbar {
+  width: 100%;
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Helvetica;
 }
-.nav-item ul{
-    list-style: none;
+.nav-item {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.nav-item ul li{
-    display: inline;
-    margin: 15px;
+.nav-item ul {
+  list-style: none;
 }
-.nav-item ul li a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: 650;
+.nav-item ul li {
+  display: inline;
+  margin: 15px;
 }
-.area-logo{
-    width: 20%;
-    height: 100%;
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav-item ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
 }
-.nav-items{
-    width: 32%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.area-logo {
+  color: #fff;
+  width: 20%;
+  height: 100%;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.nav-items ul{
-    list-style: none;
+.nav-items {
+  width: 32%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.nav-items ul li{
-    display: inline;
-    margin: 15px;
+.nav-items ul {
+  list-style: none;
 }
-.nav-items ul li a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: 650;
+.nav-items ul li {
+  display: inline;
+  margin: 15px;
 }
-.nav-visit{
+.nav-items ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+/*.nav-visit{
     width: 8%;
     height: 100%;
     display: flex;
     align-items: center;
     border-left: 1px  solid #000000;
+}*/
+.nav-visit ul {
+  list-style: none;
 }
-.nav-visit ul{
-    list-style: none;
+.nav-visit ul li {
+  margin-left: 30px;
 }
-.nav-visit ul li{
-    margin-left: 30px;
+.nav-visit ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 650;
 }
-.nav-visit ul li a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: 650;
+.area-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 15%;
+  color: #fff;
+}
+.sub-header {
+  font-size: 18px;
+  font-family: "Lora";
+}
+.header {
+  font-size: 28px;
+  font-family: "Montserrat";
+  text-align: center;
+}
+/*.header h1{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}*/
+.btn-more {
+  width: 100px;
+  height: 15px;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: none;
+  border: #fff 2px solid;
+  border-radius: 45px;
+  color: #3f3d30;
+  background-color: #fff;
+  font-family: Helvetica;
+  padding: 9px;
+}
+.about-muuseum {
+  width: 100vw;
+  height: 100vh;
+  background-color: #eeede0;
+  display: flex;
+}
+.teks-bout {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: -30px;
+  background-color: #eeede0;
+}
+
+.teks-bout h1 {
+  color: #000;
+  font-size: 23px;
+  font-weight: 750;
+  font-family: "Montserrat";
+}
+.sub-info {
+  color: #91918c;
+  font-family: "Lora";
+  font-weight: 400;
+}
+.more-btn {
+  color: #000;
+  font-family: Helvetica;
+  font-weight: 750;
+  font-size: 10px;
+  font-size: 12px;
+}
+
+.card-img {
+  width: 50%;
+  height: 50%;
+}
+
+.card-img img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  margin-left: 50%;
+  
 }
