@@ -6,8 +6,8 @@
   margin: 0;
 }
 body {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 .hero {
   width: 100vw;
@@ -18,7 +18,7 @@ body {
 }
 .navbar {
   width: 100%;
-  height: 8%;
+  height: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,6 +31,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .nav-item ul {
   list-style: none;
 }
@@ -127,8 +128,13 @@ body {
 }
 .about-muuseum {
   width: 100vw;
-  height: 100vh;
+  height: 85vh;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   background-color: #eeede0;
+}
+.container {
   display: flex;
 }
 .teks-bout {
@@ -139,12 +145,11 @@ body {
   text-align: center;
   flex-direction: column;
   margin-bottom: -30px;
-  background-color: #eeede0;
 }
 
 .teks-bout h1 {
   color: #000;
-  font-size: 23px;
+  font-size: 35px;
   font-weight: 750;
   font-family: "Montserrat";
 }
@@ -152,6 +157,7 @@ body {
   color: #91918c;
   font-family: "Lora";
   font-weight: 400;
+  font-size: 15px;
 }
 .more-btn {
   color: #000;
@@ -164,13 +170,236 @@ body {
 .card-img {
   width: 50%;
   height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-img img {
-  width: 50%;
+  width: 90%;
+  transition: 0.6s;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+.card-img img:hover {
+  background-size: cover;
+  transition: all 1.1s;
+  transform: scale(1.1);
+}
+
+@keyframes img {
+  from {
+    opacity: 0;
+    clip-path: inset(100% 100% 0 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .navbar {
+    margin: 0;
+  }
+
+  .about-muuseum {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .card-img {
+    margin-top: 15px;
+  }
+  .teks-bout h1 {
+    font-size: 20px;
+  }
+  .teks-bout p {
+    font-size: 10px;
+  }
+}
+
+/*Main Wrapper*/
+/*Colection*/
+.cuontainer {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+}
+.teks {
+  width: 98%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.collec {
+  margin: 25px;
+  font-family: "Montserrat";
+  font-size: 25px;
+}
+.view {
+  margin-right: 30px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.currently {
+  margin: 20px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 550;
+  flex-direction: column-reverse;
+  display: flex;
+  color: #91918c;
+}
+
+.kontainer {
+  height: 100vw;
+  width: 85vh;
+}
+
+/*.tittle-cafe{
+  display: flex;
+  text-align: center;
   justify-content: center;
-  margin: 30px;
-  margin-left: 50%;
-  
+  align-items:center ;
+  flex-direction: column;
+  margin-left: 25px;
+}*/
+
+.Café-terrace-at-night {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.Café-terrace-at-night img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cafe {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.Vincent {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.Country-road-in-Provence-by-night {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.Country-road-in-Provence-by-night img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.country {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.van {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.the-Death-of-general-wolfe {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.the-Death-of-general-wolfe img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.death-teks {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.p-death {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia img {
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+.prince-teks {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.par-prince {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.Autum-Trees-caa{
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.Autum-Trees-caa img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.autum-teks{
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.autum-par{
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.Goin-to-work{
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.Goin-to-work img{
+  width: 100%;
+  margin-bottom: 10px;
+}
+.teks-work{
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.par-work{
+  color: #91918c;
+  font-family: "Montserrat";
 }
