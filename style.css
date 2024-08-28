@@ -228,6 +228,7 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .teks {
   width: 98%;
@@ -343,11 +344,13 @@ body {
   align-items: start;
   margin: 20px;
   flex-direction: column;
+  top: -15rem;
+  position: relative;
 }
-.Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia img {
+.Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia
+  img {
   width: 100%;
   margin-bottom: 10px;
-
 }
 .prince-teks {
   font-size: 15px;
@@ -359,7 +362,7 @@ body {
   color: #91918c;
   font-family: "Montserrat";
 }
-.Autum-Trees-caa{
+.Autum-Trees-caa {
   width: 30%;
   display: flex;
   justify-content: left;
@@ -367,39 +370,48 @@ body {
   margin: 20px;
   flex-direction: column;
 }
-.Autum-Trees-caa img{
+.Autum-Trees-caa img {
   width: 100%;
   margin-bottom: 10px;
 }
-.autum-teks{
+.autum-teks {
   font-size: 15px;
   font-family: "Montserrat";
   color: #1e201e;
   font-weight: 750;
 }
-.autum-par{
+.autum-par {
   color: #91918c;
   font-family: "Montserrat";
 }
-.Goin-to-work{
+.Goin-to-work {
   width: 30%;
   display: flex;
   justify-content: left;
   align-items: start;
   margin: 20px;
   flex-direction: column;
+  top: -28rem;
+  position: relative;
 }
-.Goin-to-work img{
+.Goin-to-work img {
   width: 100%;
   margin-bottom: 10px;
 }
-.teks-work{
+.teks-work {
   font-size: 15px;
   font-family: "Montserrat";
   color: #1e201e;
   font-weight: 750;
 }
-.par-work{
+.par-work {
   color: #91918c;
   font-family: "Montserrat";
+}
+
+@media screen and (max-width: 600px) {
+  .Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia {
+    position: relative;
+    top: 0;
+  }
 }
