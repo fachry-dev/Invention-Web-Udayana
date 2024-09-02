@@ -197,7 +197,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 2px solid #1E201E;
+}
+.area-garis{
+  border-bottom: #000 2px solid;  
+  margin-left: 2%;
 }
 .text-title1{
   width: 97%;
@@ -265,7 +268,7 @@ body {
   font-weight: 500;
 }
 .button {
-  width:30%;
+  width:60%;
   height: 10%;
   border:#91918c 1px solid;
   border-radius: 15px;
@@ -286,6 +289,45 @@ body {
   margin-top: 30px;
   display: flex;
 }
+.conten-wild1{
+  margin-left: 45%;
+  margin-top:-20%;
+
+}
+.wild-teks{
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: #1E201E;
+}
+.date-wild{
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: #91918c;
+  font-weight: 500;
+
+}
+.p-wild{
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: #91918c;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.btn-wild {
+  width: 35%;
+  height: 10;
+  border:#91918c 1px solid;
+  border-radius: 15px;
+  margin-top: 5%;
+  background-color: transparent;
+}
+.btn-wild a{
+  font-family: "Montserrat";
+  font-size: 10px;
+  text-decoration: none;
+  color: #1E201E;
+  font-weight: 560;
+}
 .conten-item-wild{
   width: 50%;
   margin-right: 30px;
@@ -295,7 +337,277 @@ body {
   height: 100%;
   margin-left: 20px;
 }
+/* creation of adam  */
+.conten-of-adam{
+  width: 100%;
+  height: 40%;
+  margin-top: 30px;
+  display: flex;
+}
+.conten-of-adam{
+  margin-top: 10%;
+}
+.conten-adam{
+  margin-left: 45%;
+  margin-top:-20%;
+}
+.adam-teks{
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: #1E201E;
+}
+.date-adam{
+  font-size: 10px;
+  font-family: "Montserrat";
+  color: #91918c;
+  font-weight: 500;
 
+}
+.p-adam{
+  font-family: "Montserrat";
+  font-size: 10px;
+  color: #91918c;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.btn-adam {
+  width:30%;
+  height: 15px;
+  border:#91918c 1px solid;
+  border-radius: 15px;
+  margin-top: 5%;
+  background-color: transparent;
+}
+.btn-adam a{
+  font-family: "Montserrat";
+  font-size: 10px;
+  text-decoration: none;
+  color: #1E201E;
+  font-weight: 560;
+}
+.conten-adam{
+  width: 50%;
+  margin-right: 30px;
+}
+.img-adam img{
+  width: 107%;
+  height: 100%;
+  margin-left: 20px;
+}
+.garis{
+  border-bottom: #BEBEBE 2px solid;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10%;
+}
+.btn-load{
+  width: 15%;
+  height: 5%;
+  margin-left:  40%;
+  margin-top: 5%;
+  border-radius: 20px;
+  background-color: #000;
+}
+.btn-load a{
+ color: #eeede0;
+ font-family: "Montserrat";
+ font-weight: 500;
+ font-size: 10px;
+ text-decoration: none;
+}
+/* colection css */
+.collection-area{
+  margin-top: 35%;
+}
+.cuontainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.teks {
+  width: 98%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.collec {
+  margin: 25px;
+  font-family: "Montserrat";
+  font-size: 25px;
+}
+.view {
+  margin-right: 30px;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.garis-div{
+  border-bottom: #1E201E 1px solid;
+  margin-left: 20px;
+  margin-right: 35px;
+}
+.currently {
+  margin: 20px;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 550;
+  flex-direction: column-reverse;
+  display: flex;
+  color: #91918c;
+}
+
+.kontainer {
+  height: 100vw;
+  width: 85vh;
+}
+
+/*.tittle-cafe{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items:center ;
+  flex-direction: column;
+  margin-left: 25px;
+}*/
+
+.Café-terrace-at-night {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.Café-terrace-at-night img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.cafe {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.Vincent {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.Country-road-in-Provence-by-night {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.Country-road-in-Provence-by-night img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.country {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.van {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.the-Death-of-general-wolfe {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.the-Death-of-general-wolfe img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.death-teks {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.p-death {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+  top: -1rem;
+  position: relative;
+}
+.Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia
+  img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.prince-teks {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.par-prince {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.Autum-Trees-caa {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+}
+.Autum-Trees-caa img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.autum-teks {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.autum-par {
+  color: #91918c;
+  font-family: "Montserrat";
+}
+.Goin-to-work {
+  width: 30%;
+  display: flex;
+  justify-content: left;
+  align-items: start;
+  margin: 20px;
+  flex-direction: column;
+  top: -28rem;
+  position: relative;
+}
+.Goin-to-work img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.teks-work {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: #1e201e;
+  font-weight: 750;
+}
+.par-work {
+  color: #91918c;
+  font-family: "Montserrat";
+}
 /* Keyframes & media screen  */
 @media screen and (max-width: 600px) {
   .Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia {
