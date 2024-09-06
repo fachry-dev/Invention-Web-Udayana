@@ -9,7 +9,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
-.hero {
+.Home {
   width: 100vw;
   height: 100vh;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -544,7 +544,7 @@ body {
   align-items: start;
   margin: 20px;
   flex-direction: column;
-  top: -1rem;
+  top: -15rem;
   position: relative;
 }
 .Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia
@@ -608,6 +608,45 @@ body {
   color: #91918c;
   font-family: "Montserrat";
 }
+.section_admis{
+  width: 100vw;
+  height: 70vh;
+}
+.prices{
+  font-family: "Montserrat";
+  margin-left: 40%;
+  font-size: 35px;
+  font-weight: 750;
+  color: #2C2905;
+}
+.admis{
+  margin-left: 37%;
+  font-family: "MOntserrat";
+  font-weight: 650;
+  font-size: 37px;
+  color: #2C2905;
+}
+.containel{
+  margin: 100px 0 0 200px;
+  width: 70%;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.containel img{
+  width: 20%;
+  height: 10%;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: all ease-in-out 0.7s;
+}
+.containel img:hover{
+  width: 10%;
+  height: 15%;
+  
+}
+
 /* Keyframes & media screen  */
 @media screen and (max-width: 600px) {
   .Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia {
