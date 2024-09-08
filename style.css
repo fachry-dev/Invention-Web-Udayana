@@ -9,6 +9,7 @@ body {
   width: 100vw;
   height: 100vh;
 }
+
 .Home {
   width: 100vw;
   height: 100vh;
@@ -44,6 +45,38 @@ body {
   color: #fff;
   font-weight: 600;
 }
+.nav-item ul li a:hover{
+  color: #ff6347;
+  transform: scale(1.1);
+  font-size: 15px;
+  font-weight: 700;
+}
+.nav-items ul li a:hover{
+  color: #ff6347;
+  transform: scale(1.1);
+  font-size: 15px;
+  font-weight: 700;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#hero {
+  height: 600px;
+}
+
+#exhibitions {
+  height: 600px;
+}
+#collect {
+  height: 600px;
+}
+#Event {
+  height: 600px;
+}
+#shop {
+  height: 600px;
+}
 .area-logo {
   color: #fff;
   width: 20%;
@@ -54,7 +87,7 @@ body {
   align-items: center;
 }
 .nav-items {
-  width: 32%;
+  width: 35%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -66,6 +99,7 @@ body {
 .nav-items ul li {
   display: inline;
   margin: 15px;
+  margin-right: 10px;
 }
 .nav-items ul li a {
   text-decoration: none;
@@ -462,15 +496,6 @@ body {
   width: 85vh;
 }
 
-/*.tittle-cafe{
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-items:center ;
-  flex-direction: column;
-  margin-left: 25px;
-}*/
-
 .Café-terrace-at-night {
   width: 30%;
   display: flex;
@@ -629,6 +654,7 @@ body {
 .containel{
   margin: 100px 0 0 200px;
   width: 70%;
+  margin-top: 3%;
   height: 450px;
   display: flex;
   justify-content: center;
@@ -640,18 +666,130 @@ body {
   object-fit: cover;
   border-radius: 10px;
   transition: all ease-in-out 0.7s;
+  transition: 0.3 ease;
 }
 .containel img:hover{
-  width: 10%;
-  height: 15%;
-  
+  width: 35%;
+  height: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  transform: scale(0.8);
+
+}
+.open{
+  font-family: "MOntserrat";
+  color: #1E201E;
+  font-weight: 650;
+  font-size: 37px;
+  margin-left: 40%;
+  margin-top: -18%;
+}
+.conten-time{
+margin: 100px 0 0 200px;
+width: 70%;
+height: 450px;
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+.conten-time img{
+  width: 30%;
+  height: 20%;
+  margin-top: -5%;
+  border-radius: 10px;
+  transition: box shadow 0.3s ease;
+}
+.conten-time img:hover{
+  transform:scale(0.9) ;
+  box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.9);;
 }
 
-/* Keyframes & media screen  */
+.menu-icon{
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  position:absolute;
+  background-color: yellowgreen;
+}
+.footercontainer{
+  margin-bottom: 19%;
+  max-width: 100%;
+  margin-top: 10%;
+  padding: 70px 30px 20px;
+  background-color: #090909;
+}
+
+.sosialconten{
+  display: flex;
+  justify-content: center;
+}
+.sosialconten a{
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 65%;
+  margin: 10px;
+}
+.sosialconten a i{
+  font-size: 2em;
+  color: #658147;
+  opacity: 0.9;
+}
+
+/*effect hover on sosial conten*/
+.sosialconten a:hover{
+  background-color: #090909;
+  transition: 0.6s;
+}
+.sosialconten a :hover i{
+  color: #ffffff;
+  transition: 0.5s;
+}
+.footerNav{
+  margin: 30px;
+}
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footerNav ul li a{
+  color: #ffffff;
+  margin: 25px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.footerNav ul li a :hover{
+  opacity: 1;
+}
+.footerbottom{
+  background-color: #090909;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+.designby {
+  opacity: 0.7;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin:  0px 5px ;
+}
+@media only screen and (max-width: 768px) {
+  .nav ul {
+    display: none;
+  } 
+}
 @media screen and (max-width: 600px) {
   .Prince-Adolphus-later-Duke-of-Cambridge-with-Princess-Mary-and-Princess-Sophia {
     position: relative;
     top: 0;
+  }
+  .upcoming{
+    font-size: 20px;
   }
 }
 @keyframes img {
@@ -672,6 +810,11 @@ body {
   }
   .navbar {
     margin: 0;
+  }
+  .nav-items ul {
+   margin: 2px;
+   font-weight: 650;
+   font-size: 10px;
   }
 
   .about-muuseum {

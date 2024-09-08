@@ -1,23 +1,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 * {
     padding: 0;
     margin: 0;
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
 }
-
 .navbar {
     width: 100%;
-    height: 10%;
+    height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: Helvetica;
-    background-color: #f4f4f4;
+    background-color: #1E201E;
+    position: sticky; 
+    top: 0; 
+    z-index: 3000; 
 }
 
 .nav-item {
@@ -39,7 +42,7 @@ body {
 
 .nav-item ul li a {
     text-decoration: none;
-    color: #343131;
+    color: #ffffff;
     font-weight: 600;
     transition: color 0.8s ease, transform 0.3s ease;
 }
@@ -52,7 +55,7 @@ body {
 }
 
 .area-logo {
-    color: #343131;
+    color: #ffffff;
     width: 20%;
     height: 100%;
     font-size: 25px;
@@ -80,7 +83,7 @@ body {
 
 .nav-items ul li a {
     text-decoration: none;
-    color: #343131;
+    color: #ffffff;
     font-weight: 650;
     transition: color 0.8s ease, transform 0.3s ease; 
 }
@@ -102,10 +105,14 @@ body {
 
 .nav-visit ul li a {
     text-decoration: none;
-    color: #343131;
+    color: #ffffff;
     font-weight: 650;
     transition: color 0.3s ease, transform 0.3s ease; 
 }
+
+#mer {
+    height: 600px;
+  }
 
 .nav-visit ul li a:hover {
     color: #ff6347; 
@@ -113,7 +120,6 @@ body {
     font-weight: 700;
     font-size: 15px;
 }
-
 .shop-img img {
     width: 100%;
     height: 90%;
@@ -201,8 +207,8 @@ body {
     height: 200px;
     width: 250px;
     display: flex;
-    align-items: center;
-    padding: 15px;
+    align-items: end;
+    margin-bottom: 10%;
     perspective: 100px;
 }
 
@@ -216,8 +222,8 @@ img:hover{
 
 .slider::before,
 .slider::after{
-    background: linear-gradient(to right, rgb(255, 255, 255 0)0%
-    ,rgba(255 255 255 1)100%);
+    background: linear-gradient(to right, rgb(255, 255, 255 0)1%
+    ,rgba(255 255 255 0)100%);
     content: " ";
     height: 100%;
     position: absolute;
@@ -233,6 +239,161 @@ img:hover{
     top:0;
     transform: rotateZ('180deg');
 }
+.footer{
+    margin-top: 30%;
+}
+.footercontainer{
+    margin:0px;
+    padding:0px;
+    min-width:100%;
+    max-width:100%;
+}
+  
+  .sosialconten{
+    display: flex;
+    justify-content: center;
+  }
+  .sosialconten a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 65%;
+    margin: 20px;
+  }
+  .sosialconten a i{
+    font-size: 2em;
+    color: #658147;
+    opacity: 0.9;
+  }
+  
+  /*effect hover on sosial conten*/
+  .sosialconten a:hover{
+    background-color: #090909;
+    transition: 0.6s;
+  }
+  .sosialconten a :hover i{
+    color: #ffffff;
+    transition: 0.5s;
+  }
+  .footerNav{
+    margin: 30px;
+  }
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .footerNav ul li a{
+    color: #ffffff;
+    margin: 25px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .footerNav ul li a :hover{
+    opacity: 1;
+  }
+  .footerbottom{
+    background-color: #090909;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .designby {
+    opacity: 0.7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin:  0px 5px ;
+  }
+/* renposive nih gua bikin */
+.btn-more, .button, .btn-wild, .btn-adam, .btn-load {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+  
+  .btn-more:hover, .button:hover, .btn-wild:hover, .btn-adam:hover, .btn-load:hover {
+    background-color: #fff;
+    color: #1E201E;
+  }
+  .footercontainer{
+    width: 100%;
+    margin-top: 10%;
+    padding: 70px 30px 20px;
+    background-color: #090909;
+  }
+  
+  .sosialconten{
+    display: flex;
+    justify-content: center;
+  }
+  .sosialconten a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 65%;
+    margin: 10px;
+  }
+  .sosialconten a i{
+    font-size: 2em;
+    color: #658147;
+    opacity: 0.9;
+  }
+  
+  /*effect hover on sosial conten*/
+  .sosialconten a:hover{
+    background-color: #090909;
+    transition: 0.6s;
+  }
+  .sosialconten a :hover i{
+    color: #ffffff;
+    transition: 0.5s;
+  }
+  .footerNav{
+    margin: 30px;
+  }
+  .footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+  }
+  .footerNav ul li a{
+    color: #ffffff;
+    margin: 25px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .footerNav ul li a :hover{
+    opacity: 1;
+  }
+  .footerbottom{
+    background-color: #090909;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+  .designby {
+    opacity: 0.7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin:  0px 5px ;
+  }
 /* area keyframes */
 @keyframes scroll {
     0%{
@@ -242,3 +403,23 @@ img:hover{
         transform: translateX(calc(-250px * 9));
     }
 }
+@media screen and (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .nav-item, .nav-items, .nav-visit {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .exhibition-list {
+      flex-direction: column;
+    }
+  
+    .exhibition-item1, .conten-item-wild, .conten-of-adam {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
